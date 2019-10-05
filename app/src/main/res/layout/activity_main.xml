@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/icchar"
+        android:layout_width="187dp"
+        android:layout_height="187dp"
+        android:src="@drawable/icstarsfive"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/icsprite"
+        android:layout_width="358dp"
+        android:layout_height="360dp"
+        android:src="@drawable/confetti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bgrate"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icchar"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/titlerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Rate this Service"
+            android:textAlignment="center"
+            android:textColor="#b176b1"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/ratestars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1"
+            android:progressTint="#ffeea3"
+            android:layout_gravity="center">
+
+        </RatingBar>
+
+        <TextView
+            android:id="@+id/resultrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amazing"
+            android:textAlignment="center"
+            android:textColor="#00bfa5"
+            android:textSize="32sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp"
+        android:text="Give Feedback"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:background="@drawable/btnfeed"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
