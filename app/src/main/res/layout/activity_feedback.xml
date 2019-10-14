@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:layout_marginTop="-180dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:src="@drawable/login_title" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Rate"
+        android:textSize="18sp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+   <TextView
+       android:id="@+id/textview1"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_marginTop="10dp"
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:textAlignment="center"
+       android:textColor="@color/color"
+       android:fontFamily="@font/roboto_light"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="54dp"
+        android:background="@drawable/line"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="384dp"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="match_parent"
+            android:hint="Please Write Your Review"
+            android:layout_marginLeft="9dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:text="Submit"
+        android:textColor="@color/putih"
+        android:background="@drawable/button"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="465dp"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

@@ -3,7 +3,13 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#ffff</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="PrimaryDark">#00BFA5</color>
 
     <color name="colorActive">#F1C40F</color>
     <color name="colorStand">#FFFFFF</color>
+
+    <color name="color">#B176B1</color>
+    <color name="putih">#ffffff</color>
+    <color name="rating">#FFEEA3</color>
+    <color name="line">#707070</color>
 </resources>

@@ -2,7 +2,9 @@ package com.example.ratingbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
                 answerValue = String.valueOf((int)(ratestars.getRating()));
+
                 if (answerValue.equals("1"))
                 {
                     icchar.setImageResource(R.drawable.icstarsone);
@@ -106,5 +109,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnfeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Feedback.class);
+                intent.putExtra("answervalue",answerValue);
+                startActivity(intent);
+            }
+        });
+
     }
+
 }
