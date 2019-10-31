@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnfeedback;
     ImageView icchar,icsprite;
     RatingBar ratestars;
-    String answerValue;
+    String answerValue="5";
 
     Animation charaanim,animsprite,btnfeed;
 
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (answerValue.equals("1"))
                 {
-                    icchar.setImageResource(R.drawable.icstarsone);
+                    icchar.setImageResource(R.mipmap.icstarsone);
                     //give animate
                     icsprite.animate().alpha(0).setDuration(300).start();
                     icchar.startAnimation(charaanim);
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (answerValue.equals("2"))
                 {
-                    icchar.setImageResource(R.drawable.icstarstwo);
+                    icchar.setImageResource(R.mipmap.icstarstwo);
                     //give animate
                     icchar.startAnimation(charaanim);
                     icsprite.animate().alpha(0).setDuration(300).start();
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (answerValue.equals("3"))
                 {
-                    icchar.setImageResource(R.drawable.icstarstwo);
+                    icchar.setImageResource(R.mipmap.icstarstwo);
                     //give animate
                     icchar.startAnimation(charaanim);
                     icsprite.animate().alpha(0).setDuration(300).start();
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (answerValue.equals("4"))
                 {
-                    icchar.setImageResource(R.drawable.icstarsthree);
+                    icchar.setImageResource(R.mipmap.icstarsthree);
                     // give animate
                     icchar.startAnimation(charaanim);
                     icsprite.animate().alpha(1).setDuration(300).start();
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (answerValue.equals("5"))
                 {
-                    icchar.setImageResource(R.drawable.icstarsfive);
+                    icchar.setImageResource(R.mipmap.icstarsfive);
                     //give animate
                     icchar.startAnimation(charaanim);
                     icsprite.animate().alpha(1).setDuration(300).start();
